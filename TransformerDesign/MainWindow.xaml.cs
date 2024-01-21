@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using TransformerDesign.TransformerBase;
 
 namespace TransformerDesign
 {
@@ -20,9 +21,27 @@ namespace TransformerDesign
     /// </summary>
     public partial class MainWindow : Window
     {
+        private ElectricalSteel electricalSteel;
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                electricalSteel = new ElectricalSteel();
+                electricalSteel.CoreLossNominal1550 = Convert.ToDouble(po15.Text);
+                electricalSteel.CoreLossNominal1750 = Convert.ToDouble(po17.Text);
+                p.Text = electricalSteel.GetCoreLossNominal(Convert.ToDouble(bt.Text)).ToString();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);                
+            }
+
         }
     }
 }
