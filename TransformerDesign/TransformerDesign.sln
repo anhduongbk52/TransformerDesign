@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransformerDesign", "TransformerDesign.csproj", "{79B6A8CD-1EEB-4168-AF9C-EC1C4D896B20}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignManager", "..\DesignManager\DesignManager.csproj", "{BCE6A5A5-31D0-46BC-8C7C-734DF60C20F1}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{79B6A8CD-1EEB-4168-AF9C-EC1C4D896B20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{79B6A8CD-1EEB-4168-AF9C-EC1C4D896B20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{79B6A8CD-1EEB-4168-AF9C-EC1C4D896B20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{79B6A8CD-1EEB-4168-AF9C-EC1C4D896B20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BCE6A5A5-31D0-46BC-8C7C-734DF60C20F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BCE6A5A5-31D0-46BC-8C7C-734DF60C20F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCE6A5A5-31D0-46BC-8C7C-734DF60C20F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
